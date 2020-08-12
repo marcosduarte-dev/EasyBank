@@ -61,6 +61,7 @@ a{
 .flex-wrap{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 section.header-section{
 	background-color: hsl(0, 0%, 98%);
@@ -72,7 +73,6 @@ section.header-section{
 	max-height: 800px;
 }
 section.header-section .conteudo{
-	/*width: 48%;*/
 	width: 50%;
 }
 .conteudo h2{
@@ -113,5 +113,33 @@ section.header-section img{
 }
 /*Mobile*/
 @media screen and (max-width: 930px) {
-	
+	.header-desktop .flex-wrap{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.conteudo h2,
+	.conteudo p{
+		text-align: center;
+		padding: 0 2%;
+		display: inline-block;
+	}
+	section.header-section{
+		height: auto;
+		max-height: none;
+		background-image: url(../images/bg-intro-mobile.svg);
+		background-position: top right;
+		background-size: 50%;
+	}
+	section.header-section .mockups{
+		width: 50%;
+		margin-top: 0px;
+	}
+	section.header-section .conteudo{
+		text-align: center;
+		width: 100%;
+	}
+	.btn-header-chamada{
+		margin-left: 0;
+		margin-bottom: 100px;
+	}
 }
