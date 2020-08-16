@@ -3,7 +3,6 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Public Sans', sans-serif;
-	/*font-size: 18px;*/
 }
 html,body{
 	height: 100%;
@@ -14,14 +13,14 @@ a{
 	margin: 0 10px;
 }
 .overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: none;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.75); /*this sets the slightly see-through black*/
-    z-index: 100; /*Make this less than the existing popup div*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.75);
+  z-index: 100;
 }
 .container{
 	width: 100%;
@@ -33,29 +32,28 @@ a{
 .banner{
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
 	align-items: center;
 	padding: 17px 14%;
-	width: 100%;
 }
 .banner-mobile{
-	display: none;
-	padding: 17px 0;
-	width: 100%;
 	position: relative;
+	display: none;
+	width: 100%;
+	padding: 17px 0;
 }
 .banner-mobile img.logo{
-	cursor: pointer;
 	padding: 15px 2%;
 }
 .banner-mobile img.hamburger{
 	cursor: pointer;
-	padding: 15px 2%;
 	min-width: 24px;
+	padding: 15px 2%;
 }
 .banner-mobile nav{
+	position: absolute;
 	display: none;
 	width: 100%;
-	position: absolute;
 	top: 100px;
 	text-align: center;
 	z-index: 101;
@@ -141,7 +139,6 @@ section.header-section img{
 	max-width: 767px;
 	padding: 0 2%;
 }
-
 /*Section1*/
 .section1{
 	padding: 130px 0;
@@ -191,32 +188,31 @@ section.header-section img{
 	font-size: 36px;
 	font-weight: 300;
 }
-.section2 .item-single{
+.section2 .single-item{
 	margin-top: 55px;
 	width: 23%;
-	/*padding: 0 2%;*/
 	background-color: white;
 }
-.section2 .item-single img{
+.section2 .single-item img{
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
 	max-height: 190px;
 }
-.section2 .item-single > div{
+.section2 .single-item > div{
 	margin-top: 28px;
 	padding: 0 7%;
 }
-.section2 .item-single span{
+.section2 .single-item span{
 	font-size: 12px;
 	color: hsl(233, 8%, 62%);
 }
-.section2 .item-single h2{
+.section2 .single-item h2{
 	font-size: 18px;
 	font-weight: 300;
 	padding: 15px 0;
 }
-.section2 .item-single p{
+.section2 .single-item p{
 	color: hsl(233, 8%, 62%);
 }
 /*Footer*/
@@ -273,7 +269,7 @@ footer .direitos p{
 	.section1 .single-item{
 		width: 50%;
 	}
-	.section2 .item-single{
+	.section2 .single-item{
 		width: 48%;
 	}
 }
@@ -331,7 +327,7 @@ footer .direitos p{
 	.section2 .container > h2{
 		text-align: center;
 	}
-	.section2 .item-single{
+	.section2 .single-item{
 		width: 100%;
 		max-width: 380px;
 		text-align: center;
