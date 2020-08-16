@@ -2,22 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   
   <title>Frontend Mentor | Easybank landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
+  <span class="overlay"></span>
   <header class="header-desktop">
     <div class="banner">
       <img href="#" class="logo" src="images/logo.svg">
@@ -32,6 +30,21 @@
        </nav>
       <input class="btn_request" type="button" name="btn-header-request" value="Request Invite">
     </div><!--banner-->
+
+    <div class="banner-mobile">
+      <img href="#" class="logo" src="images/logo.svg">
+      <nav id="nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+         </ul>
+       </nav>
+      <img class="hamburger" id="menu-mobile" src="images/icon-hamburger.svg">
+    </div><!--banner-->
+
     <section class="header-section flex-wrap">
       <div class="conteudo">
         <h2>Next generation digital banking</h2>
@@ -119,9 +132,9 @@
     <div class="container">
       <div class="flex-wrap">
         <div class="social">
-          <div><img src="images/logowhite.svg"></div>
-          <div>
-            <img src="images/icon-facebook.svg">
+          <img class="logo" src="images/logowhite.svg">
+          <div class="">
+            <img class="filter-green" src="images/icon-facebook.svg">
             <img src="images/icon-youtube.svg">
             <img src="images/icon-twitter.svg">
             <img src="images/icon-pinterest.svg">
@@ -150,7 +163,7 @@
         </div><!--menu-->
         <div class="direitos">
           <input class="btn_request" type="button" name="btn-header-request" value="Request Invite">
-          <p>© Easybank. All Rights Reserved--></p>
+          <p>© Easybank. All Rights Reserved</p>
         </div><!--direitos-->
       </div><!--flex-wrap-->
     </div><!--container-->
@@ -160,5 +173,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Marcos Pedroso</a>.
   </div>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/function.js"></script>
 </body>
 </html>
