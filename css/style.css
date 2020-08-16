@@ -185,6 +185,21 @@ section.header-section img{
 .section2 .item-single p{
 	color: hsl(233, 8%, 62%);
 }
+/*Footer*/
+footer{
+	padding: 50px 0;
+	background-color: rgb(45,49,78);
+}
+footer .social{
+	width: 25%;
+}
+footer .menu{
+	width: 50%;
+}
+footer .direitos{
+	width: 25%;
+}
+
 @media screen and (max-width: 1280px) {
 	.section1 .single-item{
 		width: 50%;
