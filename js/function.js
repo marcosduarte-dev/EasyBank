@@ -4,7 +4,11 @@ $(function() {
 	body = $('body');
 	overlay = $('.overlay');
 
-	/* Mobile Menu */
+	/* 
+	
+	Mobile Menu 
+	
+	*/
 
 	body.click(function() {
 		if(navdisplay == 'block') {
